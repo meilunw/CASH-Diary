@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/balance_button"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:text="Balance" />
+
+    <Button
+        android:id="@+id/income_button"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:text="Income" />
+
+    <Button
+        android:id="@+id/expense_button"
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:text="Expense" />
+
+</LinearLayout>
