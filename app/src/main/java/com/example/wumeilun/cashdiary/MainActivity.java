@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         balance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                balance();
             }
         });
         income.setOnClickListener(new View.OnClickListener() {
@@ -35,12 +35,20 @@ public class MainActivity extends AppCompatActivity {
         expense.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                expense();
             }
         });
     }
     public void income() {
         Intent intent = new Intent(this, Income_activity.class);
+        startActivity(intent);
+    }
+    public void expense() {
+        Intent intent = new Intent(this, Expense_activity.class);
+        startActivity(intent);
+    }
+    public void balance() {
+        Intent intent = new Intent(this, Balance_activity.class);
         startActivity(intent);
     }
 }

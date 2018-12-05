@@ -6,4 +6,142 @@
     android:layout_height="match_parent"
     tools:context=".Income_activity">
 
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="112dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="240dp"
+        android:text="Income Details" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="112dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="12dp"
+        android:text="New Income" />
+
+    <View
+        android:id="@+id/New-Income-Info"
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="44dp" />
+
+    <EditText
+        android:id="@+id/Money"
+        android:gravity="left"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Amount" />
+
+    <EditText
+        android:id="@+id/Date"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toEndOf="@+id/Money"
+        android:layout_toRightOf="@+id/Money"
+        android:ems="10"
+        android:gravity="left"
+        android:inputType="date"
+        android:text="MM/DD/YY" />
+
+    <EditText
+        android:id="@+id/Comment"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Money"
+        android:layout_alignLeft="@+id/Money"
+        android:layout_alignEnd="@+id/Date"
+        android:layout_alignRight="@+id/Date"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:ems="10"
+        android:gravity="left"
+        android:inputType="textPersonName"
+        android:text="Comment" />
+
+    <Button
+        android:id="@+id/Add-New-Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/Cancel-New-Income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Add-New-Expense"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-1dp"
+        android:text="Cancel" />
+
+    <TableLayout
+        android:id="@+id/Income_Details"
+        android:layout_width="match_parent"
+        android:layout_height="239dp"
+        android:layout_alignEnd="@+id/Money"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-205dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
 </RelativeLayout>

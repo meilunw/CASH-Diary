@@ -1,9 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Expense_activity">
+    tools:context=".Income_activity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="112dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="240dp"
+        android:gravity="center"
+        android:text="Expense Details" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="112dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="New Expense" />
+
+    <View
+        android:id="@+id/New-Income-Info"
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="44dp" />
+
+    <EditText
+        android:id="@+id/Money"
+        android:gravity="left"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Amount" />
+
+    <EditText
+        android:id="@+id/Date"
+        android:gravity="left"
+        android:layout_width="148dp"
+        android:layout_marginLeft="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="MM/DD/YY" />
+
+    <EditText
+        android:id="@+id/Comment"
+        android:gravity="left"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Money"
+        android:layout_alignLeft="@+id/Money"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Comment" />
+
+    <Button
+        android:id="@+id/Add-New-Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/Cancel-New-Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Add-New-Expense"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:text="Cancel" />
+
+    <TableLayout
+        android:id="@+id/Expense_Details"
+        android:layout_width="match_parent"
+        android:layout_height="242dp"
+        android:layout_alignEnd="@+id/Money"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-205dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+</RelativeLayout>
