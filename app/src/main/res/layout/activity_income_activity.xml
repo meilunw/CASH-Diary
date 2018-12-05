@@ -92,37 +92,15 @@
         android:inputType="textPersonName"
         android:text="Comment" />
 
-    <Button
-        android:id="@+id/Add-New-Expense"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="178dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginRight="11dp"
-        android:text="Add" />
-
-    <Button
-        android:id="@+id/Cancel-New-Income"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/Add-New-Expense"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="-1dp"
-        android:text="Cancel" />
-
     <TableLayout
         android:id="@+id/Income_Details"
         android:layout_width="match_parent"
         android:layout_height="239dp"
         android:layout_alignEnd="@+id/Money"
+        android:layout_alignRight="@+id/Money"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="-205dp"
+        android:layout_marginRight="-205dp"
         android:layout_marginBottom="0dp"
         android:gravity="top"
         android:orientation="vertical">
@@ -143,5 +121,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </TableLayout>
+
+    <Button
+        android:id="@+id/Add-New-Income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/New-Income-Info"
+        android:layout_alignEnd="@+id/Date"
+        android:layout_alignRight="@+id/Date"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/title2"
+        android:layout_alignLeft="@+id/title2"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="175dp"
+        android:text="Cancel" />
 
 </RelativeLayout>
