@@ -19,7 +19,9 @@
         <activity android:name=".Income_activity" />
         <activity android:name=".Expense_activity" />
         <activity android:name=".Balance_activity" />
-        <activity android:name=".AddedIncome"></activity>
+        <activity android:name=".AddedIncome" />
+        <activity android:name=".Added" />
+        <activity android:name=".Added_Expense"></activity>
     </application>
 
 </manifest>
