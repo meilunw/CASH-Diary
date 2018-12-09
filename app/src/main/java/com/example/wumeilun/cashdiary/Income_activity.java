@@ -5,14 +5,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 
 public class Income_activity extends AppCompatActivity {
     Button AddIncome;
+    TableLayout IncomeDetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_income_activity);
+
         AddIncome = findViewById(R.id.Add_New_Income);
         AddIncome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -21,6 +25,7 @@ public class Income_activity extends AppCompatActivity {
             }
         });
     }
+
     public void addincome() {
         Intent intent = new Intent(this, AddedIncome.class);
         startActivity(intent);
